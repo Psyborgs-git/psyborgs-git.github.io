@@ -8,6 +8,8 @@ export default defineConfig({
   server: {
     port: 5173,
     open: true,
+    host: '0.0.0.0',
+    allowedHosts: ['localhost', '<IP_ADDRESS>', "jae.local"],
   },
   build: {
     target: 'ES2022',
